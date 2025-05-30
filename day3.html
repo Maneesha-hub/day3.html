@@ -1,0 +1,81 @@
+<html>
+<head>
+  <title>Grid Properties</title>
+  <style>
+    .parent {
+      display: grid;
+      width: 800px;
+      height: 600px;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 10px;
+    }
+
+    .child {
+      padding: 20px;
+      border: 1px solid black;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #c1 {
+      background-color: #ff69b4;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    #c2 {
+      background-color: #33cc33;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 6;
+    }
+
+    #c3 {
+      background-color: #6666ff;
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    #c4 {
+      background-color: #ff9966;
+      grid-column-start: 4;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    #c5 {
+      background-color: #99ff99;
+      grid-column-start: 2;
+      grid-column-end: 6;
+      grid-row-start: 4;
+      grid-row-end: 6;
+    }
+
+    #c6 {
+      background-color: #cc66ff;
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 6;
+      grid-row-end: 7;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div id="c1" class="child">Navbar</div>
+    <div id="c2" class="child">Aside</div>
+    <div id="c3" class="child">Some Content</div>
+    <div id="c4" class="child">More Content</div>
+    <div id="c5" class="child">Main Content</div>
+    <div id="c6" class="child">Footer</div>
+  </div>
+</body>
+</html>
